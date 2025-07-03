@@ -46,15 +46,18 @@ For multiple message types, use separate `MIDI Out CHOP`s.
 
 ### Launching Clips in Ableton Live
 
-# Ableton Live 8×8 Grid MIDI Mapping
+#### Set up Remote
+Install loopMIDI (windows) and have it running (creates internal MIDI connetions inside the computer)
 
-This document outlines the **default MIDI note mapping** for an 8×8
-grid controller (such as the Novation Launchpad) when used with
-**Ableton Live**. These mappings correspond to **clip launch slots**
-in Session View and are automatically handled by Ableton’s built-in
-Control Surface scripts.
+In Ableton Live...
+1. Options->Settings->Link, Tempo & MIDI`
+2. Set control surface to e.g. Launchpad Mini Mk3
+3. Set Device In to loopMIDI
+4. On Input Ports select Remote for loopMIDI (remote means remote control of Ableton)
 
-## Grid Layout
+#### Ableton Live 8×8 Grid MIDI Mapping
+
+Here is the mapping for [Launchpad Mini MK3](https://downloads.novationmusic.com/novation/launchpad-mk3/launchpad-mini-mk3-0)
 
 The 8×8 grid corresponds to **MIDI Note On messages** on **MIDI
 Channel 1**. The layout below shows the note numbers sent by each pad
@@ -65,14 +68,14 @@ Top of Session View
 
 |     | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| Row 8 | 91 | 92 | 93 | 94 | 95 | 96 | 97 | 98 |
-| Row 7 | 83 | 84 | 85 | 86 | 87 | 88 | 89 | 90 |
-| Row 6 | 75 | 76 | 77 | 78 | 79 | 80 | 81 | 82 |
-| Row 5 | 67 | 68 | 69 | 70 | 71 | 72 | 73 | 74 |
-| Row 4 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 |
-| Row 3 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 |
-| Row 2 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 |
-| Row 1 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 |
+| Row 8 | 64 | 65 | 66 | 67 | 96 | 97 | 98 | 99 |
+| Row 7 | 60 | 61 | 62 | 63 | 92 | 93 | 94 | 95 |
+| Row 6 | 56 | 57 | 58 | 59 | 88 | 89 | 90 | 91 |
+| Row 5 | 52 | 53 | 54 | 55 | 84 | 85 | 86 | 87 |
+| Row 4 | 48 | 49 | 50 | 51 | 80 | 81 | 82 | 83 |
+| Row 3 | 44 | 45 | 46 | 47 | 76 | 77 | 78 | 79 |
+| Row 2 | 40 | 41 | 42 | 43 | 72 | 73 | 74 | 75 |
+| Row 1 | 36 | 37 | 38 | 39 | 68 | 69 | 70 | 71 |
 
 Left → Right (Track 1 → Track 8)
 
@@ -83,6 +86,7 @@ Left → Right (Track 1 → Track 8)
 
 To launch the clip in **Track 3, Row 6**, press the pad that sends MIDI note **77**.
 
+This mapping is also used for drum mode
 
 #### References
 
