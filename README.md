@@ -57,7 +57,7 @@ In Ableton Live...
 
 #### Ableton Live 8×8 Grid MIDI Mapping
 
-Here is the mapping for [Launchpad Mini MK3](https://downloads.novationmusic.com/novation/launchpad-mk3/launchpad-mini-mk3-0)
+Here is the mapping for [Launchpad Mini MK3](https://downloads.novationmusic.com/novation/launchpad-mk3/launchpad-mini-mk3-0) in **Session Mode**
 
 The 8×8 grid corresponds to **MIDI Note On messages** on **MIDI
 Channel 1**. The layout below shows the note numbers sent by each pad
@@ -68,17 +68,18 @@ Top of Session View
 
 |     | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| Row 8 | 64 | 65 | 66 | 67 | 96 | 97 | 98 | 99 |
-| Row 7 | 60 | 61 | 62 | 63 | 92 | 93 | 94 | 95 |
-| Row 6 | 56 | 57 | 58 | 59 | 88 | 89 | 90 | 91 |
-| Row 5 | 52 | 53 | 54 | 55 | 84 | 85 | 86 | 87 |
-| Row 4 | 48 | 49 | 50 | 51 | 80 | 81 | 82 | 83 |
-| Row 3 | 44 | 45 | 46 | 47 | 76 | 77 | 78 | 79 |
-| Row 2 | 40 | 41 | 42 | 43 | 72 | 73 | 74 | 75 |
-| Row 1 | 36 | 37 | 38 | 39 | 68 | 69 | 70 | 71 |
+| Row 8 | 81 | 82 | 83 | 84 | 85 | 86 | 87 | 88 |
+| Row 7 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 |
+| Row 6 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 |
+| Row 5 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 |
+| Row 4 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 |
+| Row 3 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 |
+| Row 2 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |
+| Row 1 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
 
 Left → Right (Track 1 → Track 8)
 
+These assignments can be written as row*10 + column, where row=1,2,...8 counting from the bottom and column=1,2,...8 counting from the left.
 
 - Each pad sends a `Note On` message with a unique **MIDI note number**.
 - Pressing a pad launches the corresponding **clip slot** in Ableton Live.
