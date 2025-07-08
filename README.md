@@ -1,24 +1,24 @@
 # kamalot
 
-## MIDI
+# MIDI
 
-### MIDI Out CHOP
+## MIDI Out CHOP
 
 
-#### Set Up Your MIDI Device
+### Set Up Your MIDI Device
 
 1. Open **Dialogs > MIDI Device Mapper**
 2. 
    - Create New Mapping
    - Choose your MIDI device in output
 
-#### Create a MIDI Out CHOP
+### Create a MIDI Out CHOP
 
 1. Add a `MIDI Out CHOP` to your network
 2. In the **MIDI Out CHOP parameters**:
    - Set **Output Device** to your mapped MIDI device
 
-#### Connect CHOP Channels
+### Connect CHOP Channels
 The MIDI messages are controlled by the input channel, and the name of the input channel specifies the message.
 
 For example
@@ -38,62 +38,16 @@ For example
 
 For multiple message types, use separate `MIDI Out CHOP`s.
 
-#### Test with MIDI Monitor or DAW
+### Test with MIDI Monitor or DAW
 
 [MIDIView](https://hautetechnique.com/midi/midiview) to confirm output.
 
 
 
-### Launching Clips in Ableton Live
+## TDAbleton
 
-#### Set up Remote
-Install loopMIDI (windows) and have it running (creates internal MIDI connetions inside the computer)
-
-In Ableton Live...
-1. Options->Settings->Link, Tempo & MIDI`
-2. Set control surface to e.g. Launchpad Mini Mk3
-3. Set Device In to loopMIDI
-4. On Input Ports select Remote for loopMIDI (remote means remote control of Ableton)
-
-#### Ableton Live 8×8 Grid MIDI Mapping
-
-Here is the mapping for [Launchpad Mini MK3](https://downloads.novationmusic.com/novation/launchpad-mk3/launchpad-mini-mk3-0) in **Session Mode**
-
-The 8×8 grid corresponds to **MIDI Note On messages** on **MIDI
-Channel 1**. The layout below shows the note numbers sent by each pad
-on the controller, organized as a grid with **columns left to right**
-and **rows from bottom to top**, matching the Session View in Live.
-
-Top of Session View
-
-|     | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| Row 8 | 81 | 82 | 83 | 84 | 85 | 86 | 87 | 88 |
-| Row 7 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 |
-| Row 6 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 |
-| Row 5 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 |
-| Row 4 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 |
-| Row 3 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 |
-| Row 2 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |
-| Row 1 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
-
-Left → Right (Track 1 → Track 8)
-
-These assignments can be written as row*10 + column, where row=1,2,...8 counting from the bottom and column=1,2,...8 counting from the left.
-
-- Each pad sends a `Note On` message with a unique **MIDI note number**.
-- Pressing a pad launches the corresponding **clip slot** in Ableton Live.
-- These mappings are active when the controller is set as a **Control Surface** in Live's preferences.
-
-To launch the clip in **Track 3, Row 6**, press the pad that sends MIDI note **77**.
-
-This mapping is also used for drum mode
-
-#### References
-
-- Ableton Live → Preferences → MIDI → Control Surface
-- Novation Launchpad MIDI Implementation Chart
-- [MIDI Note Number Chart](https://www.inspiredacoustics.com/en/MIDI_note_numbers_and_center_frequencies)
-
-
-
+### TouchDesigner Setup
+= Palette/TDAbleton/Live11+ (or 9 & 10 depending on Ableton version)
+- `tdAbleton Package` component
+   - Select Ableton Live install from dropdown
+   - Click Install (without Ableton Live running)
